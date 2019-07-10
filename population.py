@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-class Population():
-
-    def start_Random_Population(teacher_List):
-        
-=======
 import random
 class Population():
 
@@ -21,5 +15,5 @@ class Population():
                         else:
                             population_List.append("0")
 
-                            Implementar na linha 13 a validação se o item já não foi usado em outro periodo
->>>>>>> 636eef40fdb63904bcc6b1c910f5a69afa5de227
+#Implementar na linha 13 a validação se o item já não foi usado em outro periodo
+
