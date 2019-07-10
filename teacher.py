@@ -4,9 +4,15 @@ class Teacher():
 
     def __init__(self):
         self.name = ""
+<<<<<<< HEAD
         self.classPeriods = []
         self.periods = []
         self.classDays = 0
+=======
+        self.classWeekPeriods = [] #Quais periodos da semana o professor está disponível
+        self.periods = [] #Quais períodos o professor deve dar aula
+        self.classDaysAvaliable = 0 #Dias disponíveis na semana para dar aula
+>>>>>>> 636eef40fdb63904bcc6b1c910f5a69afa5de227
 
     def teacher_initialize(teacher_List):
         with open("teacher.csv") as f:
@@ -18,7 +24,11 @@ class Teacher():
                 iterrows = iter(row) #Ignora o primeiro item da list
                 next(iterrows)
                 for i in iterrows:
+<<<<<<< HEAD
                     CSV_teacher.classPeriods.append(i) #Inseri o periodo informado no arquivo no objeto
+=======
+                    CSV_teacher.classWeekPeriods.append(i) #Inseri o periodo informado no arquivo no objeto
+>>>>>>> 636eef40fdb63904bcc6b1c910f5a69afa5de227
                 CSV_teacher.classDays_count()
                 teacher_List.append(CSV_teacher)
         return teacher_List
@@ -38,6 +48,12 @@ class Teacher():
         return teacher_List
 
     def classDays_count(self):
+<<<<<<< HEAD
         for period in self.classPeriods:
             if period != "0":
                 self.classDays += 1
+=======
+        for period in self.classWeekPeriods:
+            if period != "0":
+                self.classDaysAvaliable += 1
+>>>>>>> 636eef40fdb63904bcc6b1c910f5a69afa5de227
