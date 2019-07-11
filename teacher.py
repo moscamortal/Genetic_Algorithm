@@ -1,11 +1,12 @@
 import csv
+# -*- coding: utf-8 -*-
 
 class Teacher():
 
     def __init__(self):
-        self.classWeekPeriods = [] #Quais periodos da semana o professor está disponível
-        self.periods = [] #Quais períodos o professor deve dar aula
-        self.classDaysAvaliable = 0 #Dias disponíveis na semana para dar aula
+        self.classWeekPeriods = [] #Quais periodos da semana o professor esta disponivel
+        self.periods = [] #Quais periodos o professor deve dar aula
+        self.classDaysAvaliable = 0 #Dias disponiveis na semana para dar aula
 
     def teacher_initialize(teacher_List):
         with open("teacher.csv") as f:
