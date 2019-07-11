@@ -9,6 +9,5 @@ def main():
     Teacher.periods_initialize(teacher_List)
     Population.start_Random_Population(teacher_List,population_List) #Gera a primeira populacao
 
-
 if __name__ == "__main__":
     main()
