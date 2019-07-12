@@ -20,5 +20,6 @@ class Population():
                         individual.append("0")
             population_List.append(individual)
             i += 1
-        print("Finish")
+        print("População gerada")
+        return(population_List)
 
