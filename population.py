@@ -5,14 +5,14 @@ class Population():
         population_Leng = 1000 #Defini o tamanho da populacao
         i = 0
 
-        while i <= population_Leng:  #Executa a quantida de vezes igual ao tamanho da populacao
+        while i < population_Leng:  #Executa a quantida de vezes igual ao tamanho da populacao
             individual = []
 
             for teacher in teacher_List: #Executa uma vez para cada professor dessa solucao
                 to_Shuffle = ""
                 to_Shuffle = (Population.complet_List_With_Zero(teacher.periods,len(teacher.classWeekPeriods)))
                 random.shuffle(to_Shuffle)
-                individual.extend()
+                individual.extend(to_Shuffle)
 
             population_List.append(individual)
             i += 1
